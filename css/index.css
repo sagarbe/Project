@@ -1,0 +1,310 @@
+main {
+        width:100%;
+        height:100vh;
+        background-color: rgb(23, 187, 173);
+     /* margin-top: 60px; */
+        background-image: url(../img/Jiveshwar-Jayanti555.png) ,url(../img/image\ 3.jpg);
+        background-repeat: no-repeat;
+        background-position: bottom, center;
+        background-size: 70vh,cover;
+        display: flex;
+        justify-content: center;
+        align-items:center ;
+        z-index:100;
+   }
+
+    /* main.main-intro  */
+    .main-intro h1{
+        font-size: 76px;
+        line-height: 86px;
+   }
+   /* main p  */
+   .main-intro p {
+        font-size: 18px;
+        line-height: 30px;
+   }
+
+   /* main a  */
+   .main-intro a {
+        font-size: 18px;
+        line-height: 30px;
+        background-color:var(--site-color-01);
+        display: block;
+        padding:10px 20px ;
+        width: fit-content;
+        margin-top: 30px;
+   }
+
+   /* main a:hover */
+   .main-intro a:hover{
+        background-color: var(--site-color-01-hover);
+   }
+
+   /* main.main-quotes p */
+   .main-quotes p{
+        border-left: 4px solid var(--site-color-01);
+        padding-left: 20px;
+        margin: 40px 0;
+   }
+    /* main.main-intro     */
+    .main-intro {
+        position:relative;
+        right: 20vh;
+        padding-bottom: 8vh;
+   }
+   /* main.main-quotes */
+   .main-quotes {
+        position:relative;
+        left: 4vh;
+        padding-bottom: 8vh;    
+   }
+    /* main.main-quotes p :nth-child(2) */
+    .main-quotes p:nth-child(2) {
+        margin-left: 100px;
+    }
+
+
+     /* category section  */
+
+    .index-category {
+        width:  100%;
+        padding: 60px 0;
+        background-color:#fff;
+        display:flex;
+        column-gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    
+
+    }
+
+    .index-category p{
+        text-align: center;
+        padding-bottom: 40px;
+        color: #111;
+        flex-basis: 100%;
+        text-transform: uppercase;
+        font-size: 22px;
+    }
+
+    .index-category-box {
+        width: 200px;
+        height: 200px;
+        background-color:#050505;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content :center;
+        align-items:center;
+        position:relative ;
+
+    }
+
+    .index-category-box:nth-child(2) {
+        background-image: url(../img/web\ deveop.jpg);
+    }
+
+    .index-category-box:nth-child(3) {
+        background-image: url(../img/movie\ prod.jpg);
+    }
+
+    .index-category-box:nth-child(4){
+        background-image: url(../img/film\ edit.jpg);
+    }
+
+    .index-category-box:nth-child(5) {
+        background-image: url(../img/photoshop.jpg);
+    }
+
+    .dark-overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #080808;
+        opacity: 0.5;
+        transition: all ease-in-out 200ms;
+    }
+
+    .index-category-box h3 {
+        font-size: 22px;
+        line-height: 28px;
+        text-align: center;
+        text-shadow: -2px 2px 4px #000;
+        z-index: 100;
+    }
+
+    .index-category-box:hover .dark-overlay {
+        opacity: 0;
+    }
+/* About Section */
+    .index-about {
+        width:100%;
+        padding:60px 0;
+        background-color: #222121;
+    }
+
+    .index-about-flex{
+        display: flex;
+        align-items: center;
+        column-gap: 60px;
+        justify-content: center;
+    }
+
+    .index-about-img img {
+        width: 300px;
+        border-radius: 300px;
+    }
+
+    .index-about-text {
+        flex-basis: 455px;
+    }
+
+    .index-about-text h2 {
+        padding: 20px 0;
+    }
+
+    .index-about-text a{
+        font-size: 18px;
+        line-height: 30px;
+        background-color:var(--site-color-01);
+        display: block;
+        padding:10px 20px ;
+        width: fit-content;
+        margin-top: 30px;
+    }
+
+    .index-about-text a:hover{
+        background-color: var(--site-color-01-hover);
+   }
+
+   .index-about-skill{
+    flex-basis: 455px;
+   }
+
+   .index-about-skill-bar{
+        width: 100%;
+        height: 15px;
+        border: 4px solid #030213;
+    }
+
+    .index-about-skill-bar-fill{
+        width: 100%;
+        height: 100%;
+        background-color: var(--site-color-01);
+    }
+
+    .html-css {
+        width: 95%;
+    }
+    .pr{
+        width: 87%;
+    }
+    .ph{
+        width: 67%;
+    }
+    .java{
+        width: 89%;
+    }
+    .ae{
+        width: 45%;
+    }
+    .ai{
+        width: 77%;
+    }
+
+    /* footer */
+    .footer-main{
+        width: 100%;
+        padding: 60px 0 100px;
+        background-color: #292525;
+    }
+
+    /* MOBILE VERSION */
+
+    @media only screen and (max-width:600px) {
+        main {
+            /* width:100%;
+            height:100vh;
+            background-color: rgb(23, 187, 173);
+            /* margin-top: 60px; */
+            /* background-image: url(../img/Jiveshwar-Jayanti555.png) ,url(../img/image\ 3.jpg); */
+            /* background-repeat: no-repeat; */
+            background-position: top, center;
+            background-size: 70vh,cover;
+            /* display: flex;
+            justify-content: center;  */
+            align-items:flex-start ;
+            /* z-index:100; */
+       }
+
+       .main.main-intro {
+            padding-bottom: 8vh;
+       }
+    
+        /* main.main-intro h1 */
+        .main-intro h1{
+            font-size: 5rem;
+            line-height: 1.1;
+            text-align: center;
+       }
+       /* main p  */
+       .main-intro p {
+            text-align: center;
+            padding: 0 10%;
+            font-size: 1.6rem;
+            line-height: 1.75;
+       }
+    
+       /* main a  */
+       .main-intro a {
+            /* font-size: 18px;
+            line-height: 30px;
+            background-color:var(--site-color-01);
+            display: block;
+            padding:10px 20px ;
+            width: fit-content;
+            margin-top: 30px; */
+            margin: 30px auto;
+       }
+    
+       /* main a:hover
+       .main-intro a:hover{
+            background-color: var(--site-color-01-hover);
+       }
+    
+       /* main.main-quotes p */
+       /* .main-quotes p{
+            border-left: 4px solid var(--site-color-01);
+            padding-left: 20px;
+            margin: 40px 0;
+       } */
+        /* main.main-intro     */
+        /* .main-intro {
+            position:relative;
+            right: 20vh;
+            padding-bottom: 8vh; */
+       /* } */
+       /* main.main-quotes */
+       /* .main-quotes {
+            position:relative;
+            left: 4vh;
+            padding-bottom: 8vh;    
+        } */
+        /* main.main-quotes p :nth-child(2) */
+        /* .main-quotes p:nth-child(2) {
+            margin-left: 100px;
+        } */ 
+    
+        .main-quotes {
+            /* position:relative;
+            left: 4vh;
+            padding-bottom: 8vh;     */
+            display: none;
+       }
+    }
+
+    
+
+
